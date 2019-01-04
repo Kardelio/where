@@ -1,0 +1,6 @@
+Simply add an the following alias into your .bash_profile / .bashrc / .bash_aliases
+(the word PATH should be replaced by the full path of where this application has been placed, e.g. /home/user/where/where)
+
+	alias where=". PATH"
+
+The reason for this alias is that the program cds a user into the directory as part of its functionality and if this script was simply run it would be run inside of a sub-shell and not effect the users current pwd. Therefore the script needs to be sourced to run and effect the users pwd.
