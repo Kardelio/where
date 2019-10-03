@@ -1,4 +1,5 @@
 #!/bin/bash
+#this comment is for hacktoberfest boi!
 name=$1
 full=$(which $1)
 echo "$name @ $full"
